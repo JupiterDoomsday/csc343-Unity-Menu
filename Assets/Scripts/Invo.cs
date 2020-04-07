@@ -2,28 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//this is the inventory object that gives us the list of items 
+//this is the inventory object that gives us the list of items
+[CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory")]
 public class Invo : ScriptableObject
 {
-    public List<Item> inventory;
+    public List<InventorySlot> inventory;
 
     public Invo() {
-        inventory = new List<Item>();
+        inventory = new List<InventorySlot>();
     }
 
-    //return the list 
-    public List<Item> getList() {
-        return inventory;
+    //add new item
+    public void addItem(Item itm, int a) {
+        for (int i = 0; i < inventory.Count; i++) {
+            if (inventory[i].item.id == itm.id)
+            {
+                inventory[i].increment(a);
+                return;
+            }
+        }
+        inventory.Add(new InventorySlot(itm, a));
     }
-
-    public void addItem(Item i) {
-        if (inventory.Contains(i))
-            i.amount++;
-        inventory.Add(i);
-    }
-
-    public void removeItem(Item i) {
-        inventory.Remove(i);
+    //a function to remove an item
+    public void removeItem(Item itm, int a)
+    {
+        for (int i = 0; i < inventory.Count; i++)
+        {
+            if (inventory[i].item.id == itm.id)
+            {
+                if (inventory[i].decrement(a) == 0) {
+                    inventory.RemoveAt(i);
+                    return;
+                }
+            }
+        }
     }
 }
 
@@ -38,6 +50,13 @@ public class InventorySlot {
     public void increment(int value)
     {
         amount += value;
+    }
+    public int decrement(int value) {
+        if (value >= amount)
+            amount = 0;
+        else
+            amount-=value;
+        return amount;
     }
 
 }

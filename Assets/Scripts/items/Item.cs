@@ -14,7 +14,7 @@ public abstract class Item : ScriptableObject
     public Sprite img;
     public ItemType type;
     public int id;
-    public int amount;
+    public int value;
     [TextArea(15,20)]
     public string desc;
 }
