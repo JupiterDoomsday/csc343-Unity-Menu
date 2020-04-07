@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{ED204229-8826-54B2-8F38-20EB686F02E3}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Invo.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Invo.cs" Line="21" Column="24" />
+      <File FileName="Assets/Scripts/items/Item.cs" Line="17" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="csc343 Game Menu" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="items" expanded="True" />
+                <Node name="Invo.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a7446635-dc44-4025-b3af-fa0f647825e8" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
