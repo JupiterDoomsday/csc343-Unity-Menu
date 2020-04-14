@@ -4,10 +4,9 @@ using UnityEngine;
 
 public enum BodyPart {
     head,
-    arm,
+    weapon,
     feet,
-    chest,
-    legs,
+    top,
 }
 [CreateAssetMenu(fileName = "new Equip Item", menuName = "Inventory System/Items/equipment")]
 public class Equipment : Item
