@@ -15,9 +15,11 @@ MonoBehaviour:
   title: Toast
   img: {fileID: 0}
   type: 0
-  id: 1
+  id: 2
+  amount: 0
   value: 1
-  desc: 'Every anime gurls staple breakfast
+  prefab: {fileID: 7676525776335652417, guid: de3bc651618ba43ad9fce6a071052d62, type: 3}
+  desc: 'Every anime gurl/boi/enby(s) staple breakfast tm
 
 '
   health: 5

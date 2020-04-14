@@ -6,40 +6,42 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory")]
 public class Invo : ScriptableObject
 {
-    public List<InventorySlot> inventory;
+    public List<Item> inventory;
 
     public Invo() {
-        inventory = new List<InventorySlot>();
+        inventory = new List<Item>();
     }
 
     //add new item
     public void addItem(Item itm, int a) {
         for (int i = 0; i < inventory.Count; i++) {
-            if (inventory[i].item.id == itm.id)
+            if (inventory[i].id == itm.id)
             {
-                inventory[i].increment(a);
+                inventory[i].amount+=a;
                 return;
             }
         }
-        inventory.Add(new InventorySlot(itm, a));
+        inventory.Add(itm);
     }
     //a function to remove an item
-    public void removeItem(Item itm, int a)
+    public Item removeItem(Item itm, int a)
     {
         for (int i = 0; i < inventory.Count; i++)
         {
-            if (inventory[i].item.id == itm.id)
+            if (inventory[i].id == itm.id)
             {
-                if (inventory[i].decrement(a) == 0) {
+                if (inventory[i].amount == a) {
+                    Item temp = inventory[i];
                     inventory.RemoveAt(i);
-                    return;
+                    return temp;
                 }
             }
         }
+        return null;
     }
 }
 
-[System.Serializable]
+//[System.Serializable]
 public class InventorySlot {
     public Item item;
     public int amount;

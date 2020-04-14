@@ -15,11 +15,14 @@ MonoBehaviour:
   title: Axe
   img: {fileID: 0}
   type: 1
-  id: 5
+  id: 11
+  amount: 1
   value: 20
+  prefab: {fileID: 7676525776335652417, guid: de3bc651618ba43ad9fce6a071052d62, type: 3}
   desc: live your life as the lumberbird
   hpBonus: 0
   defBonus: 0
   atkBonus: 10
   mgcBonus: 0
   spdBonus: 0
+  peice: 1

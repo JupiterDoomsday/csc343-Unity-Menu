@@ -9,6 +9,11 @@ public class Player : MonoBehaviour
     public int def;
     public int mgc;
     public int atk;
-
-    public Invo inventory; 
+    public Equipment head;
+    public Equipment leftHand;
+    public Equipment rightHead;
+    public Equipment legs;
+    public Equipment chest;
+    public Equipment feet;
+    public Invo inventory;
 }
