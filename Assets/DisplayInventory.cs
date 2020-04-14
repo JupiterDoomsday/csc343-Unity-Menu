@@ -27,7 +27,6 @@ public class DisplayInventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateDisplay();
     }
     //
     public void CreateDisplay() {
@@ -78,14 +77,17 @@ public class DisplayInventory : MonoBehaviour
 
     public void setToConsume() {
         CurTab = ItemType.Consumable;
+        UpdateDisplay();
     }
     public void setToEquipment()
     {
         CurTab = ItemType.Equipment;
+        UpdateDisplay();
     }
     public void setToMisc()
     {
         CurTab = ItemType.MISC;
+        UpdateDisplay();
     }
 
     private void moveOffScreen(GameObject obj) {
