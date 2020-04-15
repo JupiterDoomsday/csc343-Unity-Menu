@@ -17,7 +17,6 @@ public abstract class Item : ScriptableObject
     public int amount;
     public int value;
     public bool equiped;
-    public GameObject prefab;
     [TextArea(15,20)]
     public string desc;
 }

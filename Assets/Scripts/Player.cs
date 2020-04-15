@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
     public Equipment weapon;
     public Equipment top;
     public Equipment feet;
-    public Invo inventory;
 
     //this updates the equpied list of items in the user inventory
     public Equipment replaceItem(Equipment target, Equipment eqItem)

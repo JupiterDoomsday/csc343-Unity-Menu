@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DisplayInventory : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class DisplayInventory : MonoBehaviour
     public int XSpaceBtwItem;
     public int YSpaceBtwItem;
     public int ColNum;
+    public TextMeshProUGUI descBox;
+    public GameObject prefab;
     public Player user;
     Dictionary<Item, GameObject> displayed;
     private int amtItem;
@@ -27,15 +30,16 @@ public class DisplayInventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
     }
     //
     public void CreateDisplay() {
         for (int i = 0; i < menuList.inventory.Count; i++) {
             if (menuList.inventory[i] == null)
                 continue;
-            var obj = Instantiate(menuList.inventory[i].prefab, Vector3.zero, Quaternion.identity, transform);
+            var obj = Instantiate(prefab, Vector3.zero, Quaternion.identity, transform);
             displayed.Add(menuList.inventory[i],obj);
-            obj.GetComponentInChildren<TextMeshProUGUI>().text = menuList.inventory[i].name;
+            obj.GetComponentInChildren<ItemSlot>().SetName(menuList.inventory[i].name);
             if (menuList.inventory[i].type == CurTab)
             {
                 obj.GetComponent<RectTransform>().localPosition = GetPosition(amtItem);
@@ -101,9 +105,9 @@ public class DisplayInventory : MonoBehaviour
         {
             if (displayed.ContainsKey(menuList.inventory[i])==false)
             {
-                var obj = Instantiate(menuList.inventory[i].prefab, Vector3.zero, Quaternion.identity, transform);
+                var obj = Instantiate(prefab, Vector3.zero, Quaternion.identity, transform);
                 displayed.Add(menuList.inventory[i], obj);
-                obj.GetComponentInChildren<TextMeshProUGUI>().text = menuList.inventory[i].name;
+                obj.GetComponentInChildren<ItemSlot>().SetName(menuList.inventory[i].name);
             }
             if (menuList.inventory[i].type == CurTab && menuList.inventory[i].equiped ==false)
             {
@@ -116,5 +120,28 @@ public class DisplayInventory : MonoBehaviour
             }
         }
     }
+    public void disableAllItems()
+    {
+        GameObject [] child= GetComponentsInChildren<GameObject>();
+        for (int i = 0; i < child.Length; i++)
+        {
+            child[i].GetComponent<Button>().interactable = false;
+        }
+    }
+
+    public void enableAllItems()
+    {
+        GameObject[] child = this.GetComponentsInChildren<GameObject>();
+        for (int i = 0; i < child.Length; i++)
+        {
+            child[i].GetComponent<Button>().interactable = true;
+        }
+    }
+    public void ButtonClicked(string str)
+    {
+        Debug.Log(str + " button clicked.");
+
+    }
+
 
 }
