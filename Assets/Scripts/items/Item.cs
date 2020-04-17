@@ -16,6 +16,7 @@ public abstract class Item : ScriptableObject
     public int id;
     public int amount;
     public int value;
+    public bool isDisposable;
     public bool equiped;
     [TextArea(15,20)]
     public string desc;

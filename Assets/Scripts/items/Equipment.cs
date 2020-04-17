@@ -20,5 +20,6 @@ public class Equipment : Item
     public void Awake()
     {
         type = ItemType.Equipment;
+        isDisposable = true;
     }
 }

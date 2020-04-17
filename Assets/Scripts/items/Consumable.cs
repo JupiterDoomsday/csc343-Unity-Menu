@@ -8,5 +8,6 @@ public class Consumable : Item
     public void Awake()
     {
         type = ItemType.Consumable;
+        isDisposable = true;
     }
 }

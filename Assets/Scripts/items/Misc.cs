@@ -8,6 +8,7 @@ public class Misc : Item
     public void Awake()
     {
         type = ItemType.MISC;
+        isDisposable=false;
     }
     public bool isKey(int id) {
         return this.puzzelID == id;

@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{73AE1FE5-5DC7-68FF-96EC-5F5876F81A86}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DisplayInventory.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/EquipSlot.cs">
     <Files>
-      <File FileName="Assets/ItemSlot.cs" Line="18" Column="6" />
-      <File FileName="Assets/DisplayInventory.cs" Line="133" Column="6" />
+      <File FileName="Assets/DisplayInventory.cs" Line="7" Column="46" />
+      <File FileName="Assets/Scripts/Player.cs" Line="76" Column="27" />
+      <File FileName="Assets/DisplayStats.cs" Line="6" Column="14" />
+      <File FileName="Assets/EquipSlot.cs" Line="29" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +14,7 @@
               <Node name="Scripts" expanded="True">
                 <Node name="items" expanded="True" />
               </Node>
-              <Node name="DisplayInventory.cs" selected="True" />
+              <Node name="EquipSlot.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -21,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="84d5a04d-b3f0-436c-b966-d4715c9b39f2" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="076a6909-2ce0-4819-806d-a92724c17df4" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

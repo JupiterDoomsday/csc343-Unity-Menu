@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Axe
   m_EditorClassIdentifier: 
   title: Axe
-  img: {fileID: 0}
+  img: {fileID: 21300000, guid: 44aec2f6e76d942358ee85c8f14d9720, type: 3}
   type: 1
   id: 11
   amount: 1
   value: 20
-  prefab: {fileID: 7676525776335652417, guid: de3bc651618ba43ad9fce6a071052d62, type: 3}
+  isDisposable: 1
+  equiped: 0
   desc: live your life as the lumberbird
   hpBonus: 0
   defBonus: 0

@@ -39,6 +39,18 @@ public class Invo : ScriptableObject
         }
         return null;
     }
+    public Item getItem(string s) {
+        for (int i=0;i<inventory.Count;i++) {
+            if (inventory[i].name.Equals(s))
+            {
+                return inventory[i];
+            }
+        }
+        return null;
+    }
+    public bool hasItem(Item i) {
+        return inventory.Contains(i);
+    }
 }
 
 //[System.Serializable]

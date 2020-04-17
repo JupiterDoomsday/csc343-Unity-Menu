@@ -64,8 +64,10 @@
   <ItemGroup>
     <Compile Include="Assets\DisplayInventory.cs" />
     <Compile Include="Assets\DisplayStats.cs" />
+    <Compile Include="Assets\EquipSlot.cs" />
     <Compile Include="Assets\ItemSlot.cs" />
     <Compile Include="Assets\ObjectClick.cs" />
+    <Compile Include="Assets\PopUp.cs" />
     <Compile Include="Assets\PopUpDisplay.cs" />
     <Compile Include="Assets\Scripts\Invo.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />

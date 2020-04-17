@@ -1,23 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PopUpDisplay : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public TextMeshProUGUI BtnText;
 
-    // Update is called once per frame
-    void Update()
+    public void onHover()
     {
-        
+        BtnText.color= Color.green;
     }
-
-    public void moveOffScreen()
+    public void onExit()
     {
-        this.GetComponent<RectTransform>().localPosition = new Vector3(3000, 0, 0f);
+        BtnText.color = Color.white;
     }
 }
