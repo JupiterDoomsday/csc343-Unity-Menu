@@ -65,6 +65,7 @@
     <Compile Include="Assets\DisplayInventory.cs" />
     <Compile Include="Assets\DisplayStats.cs" />
     <Compile Include="Assets\EquipSlot.cs" />
+    <Compile Include="Assets\InspectMenu.cs" />
     <Compile Include="Assets\ItemSlot.cs" />
     <Compile Include="Assets\ObjectClick.cs" />
     <Compile Include="Assets\PopUp.cs" />

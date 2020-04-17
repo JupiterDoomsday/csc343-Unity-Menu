@@ -14,7 +14,10 @@ public class DisplayInventory : MonoBehaviour
     public Item curItem;
     public int yStart;
     public GameObject popupScreen;
+    public GameObject InspectScreen;
+    public InspectMenu inpsectPopUp;
     public PopUp popup;
+
     public int XSpaceBtwItem;
     public int YSpaceBtwItem;
     public int ColNum;
@@ -31,13 +34,6 @@ public class DisplayInventory : MonoBehaviour
         curItem = null;
         CreateDisplay();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    //
     public void CreateDisplay() {
         for (int i = 0; i < menuList.inventory.Count; i++) {
             if (menuList.inventory[i] == null)
@@ -122,6 +118,7 @@ public class DisplayInventory : MonoBehaviour
             }
         }
     }
+
 //this function is called when an item is clicked on
     public void ButtonClicked(string str)
     {
@@ -138,7 +135,13 @@ public class DisplayInventory : MonoBehaviour
         }
             
     }
-//this function unequips an item when the user clicks on it
+    //this function sets up the inspections mode
+    public void inspectItem(Misc item) {
+        InspectScreen.SetActive(true);
+        inpsectPopUp.moreDesc.text = item.closerLook;
+        inpsectPopUp.imgCloseUp.sprite = item.biggerImg;
+    }
+    //this function unequips an item when the user clicks on it
     public void RemoveItem( BodyPart str) {
          Equipment eq = user.removeEquipment(str);
          if (eq != null)
@@ -181,6 +184,10 @@ public class DisplayInventory : MonoBehaviour
         else if(curItem.type == ItemType.Equipment)
         {
             equipItem((Equipment)curItem);
+        }
+        else if(curItem.type== ItemType.MISC)
+        {
+            inspectItem((Misc)curItem);
         }
     }
 //this is a helper function to dispose the item

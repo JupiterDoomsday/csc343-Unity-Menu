@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{73AE1FE5-5DC7-68FF-96EC-5F5876F81A86}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/EquipSlot.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DisplayInventory.cs">
     <Files>
-      <File FileName="Assets/DisplayInventory.cs" Line="7" Column="46" />
-      <File FileName="Assets/Scripts/Player.cs" Line="76" Column="27" />
-      <File FileName="Assets/DisplayStats.cs" Line="6" Column="14" />
-      <File FileName="Assets/EquipSlot.cs" Line="29" Column="36" />
+      <File FileName="Assets/DisplayInventory.cs" Line="42" Column="61" />
+      <File FileName="Assets/Scripts/Player.cs" />
+      <File FileName="Assets/EquipSlot.cs" />
+      <File FileName="Assets/InspectMenu.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +14,7 @@
               <Node name="Scripts" expanded="True">
                 <Node name="items" expanded="True" />
               </Node>
-              <Node name="EquipSlot.cs" selected="True" />
+              <Node name="DisplayInventory.cs" selected="True" />
             </Node>
           </Node>
         </State>

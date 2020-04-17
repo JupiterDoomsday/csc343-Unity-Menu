@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca4a7fa64d00a41b8a94b293b9bb55cb, type: 3}
+  m_Name: Key
+  m_EditorClassIdentifier: 
+  title: Silver Key
+  img: {fileID: 21300000, guid: 43d821175899245e696241d0e007ad45, type: 3}
+  type: 2
+  id: 11
+  amount: 1
+  value: 1
+  isDisposable: 0
+  equiped: 0
+  desc: A silver key
+  puzzelID: 2
+  biggerImg: {fileID: 21300000, guid: 834ddf16842fa46c58defa7bb8bac71c, type: 3}
+  closerLook: 

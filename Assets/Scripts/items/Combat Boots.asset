@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9099bf3b0c940138798d6174f6e986, type: 3}
+  m_Name: Combat Boots
+  m_EditorClassIdentifier: 
+  title: Combat Boots
+  img: {fileID: 21300000, guid: 1bd499911148c4079841dd566369a2c8, type: 3}
+  type: 1
+  id: 15
+  amount: 16
+  value: 20
+  isDisposable: 1
+  equiped: 0
+  desc: These boots were meant for kick'n (spd -1) (def +5)
+  hpBonus: 0
+  defBonus: 5
+  atkBonus: 0
+  mgcBonus: 0
+  spdBonus: -1
+  peice: 2

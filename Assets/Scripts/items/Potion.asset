@@ -16,7 +16,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: 116c9f85822b24594b071316926aad3e, type: 3}
   type: 0
   id: 1
-  amount: 0
+  amount: 1
   value: 5
   isDisposable: 1
   equiped: 0

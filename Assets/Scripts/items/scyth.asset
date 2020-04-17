@@ -10,20 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea9099bf3b0c940138798d6174f6e986, type: 3}
-  m_Name: scyth
+  m_Name: Scyth
   m_EditorClassIdentifier: 
   title: Scyth
   img: {fileID: 21300000, guid: 3f388aa97fe6144b78e4c8d52ca8f1b8, type: 3}
   type: 1
-  id: 0
-  amount: 1
+  id: 12
+  amount: 6
   value: 200
   isDisposable: 1
   equiped: 0
-  desc: This edgy weapon of death is so hardcore- farmers used them to harvest bread...
+  desc: 'This edgy weapon of death is so hardcore- farmers used them to harvest bread...
+
+    (mgc
+    +15) (hp +3) (def -5)'
   hpBonus: 3
-  defBonus: 0
-  atkBonus: 5
+  defBonus: -5
+  atkBonus: 0
   mgcBonus: 15
   spdBonus: 5
   peice: 1
